@@ -34,6 +34,7 @@ export const appDataSourceProviders = [
         const appDataSource = new DataSource(
           dataSourceOptions as DataSourceOptions,
         );
+        //test seed
         await appDataSource.initialize();
         adminSeeder.seed(appDataSource.getRepository(AdminEntity));
         questionSeeder.seed(appDataSource.getRepository(QuestionEntity));
