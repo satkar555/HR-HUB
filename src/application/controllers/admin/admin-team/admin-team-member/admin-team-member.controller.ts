@@ -12,7 +12,6 @@ import { IPaginationQuery } from 'src/common/interface/response/interface/pagina
 import { CoreApiResponse } from 'src/application/api/core-api-response';
 import {
   AddTeamMembersDto,
-  CreateTeamMemberDto,
 } from 'src/core/dtos/request/teamMember.dto';
 
 @Controller('/team')

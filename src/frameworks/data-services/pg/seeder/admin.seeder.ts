@@ -21,7 +21,7 @@ export class AdminSeeder {
       const adminUser: AdminEntity = repository.create({
         email: this.configService.getDefaultAdminEmail(),
         password: this.configService.getDefaultAdminPassword(),
-        name: this.configService.getDefaultAdminName(),
+        name: `${this.configService.getDefaultAdminName()} ${this.configService.getDefaultAdminLastName()}`,
         role: AdminRoleEnum.SUPER_ADMIN,
       });
       await repository.insert(adminUser);
